@@ -5,6 +5,12 @@
 
 A Claude Code skill for structured retrospective analysis that transforms incidents into systematic improvements.
 
+## Demo Video
+
+[![Turn Every Failure Into a Fix](https://img.youtube.com/vi/ps-w7cBz9Ew/maxresdefault.jpg)](https://www.youtube.com/watch?v=ps-w7cBz9Ew)
+
+Watch the skill run a live post-mortem on social media integration issues - tracing root causes, identifying fixes, and implementing them directly.
+
 ## The Problem
 
 When things go wrong, the typical response is:
