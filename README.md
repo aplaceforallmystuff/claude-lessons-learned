@@ -5,6 +5,8 @@
 
 A Claude Code skill for structured retrospective analysis that transforms incidents into systematic improvements.
 
+![Architecture](docs/images/architecture-diagram.png)
+
 ## Demo Video
 
 [![Turn Every Failure Into a Fix](https://img.youtube.com/vi/ps-w7cBz9Ew/maxresdefault.jpg)](https://www.youtube.com/watch?v=ps-w7cBz9Ew)
