@@ -152,10 +152,6 @@ Missing sanitization step in publishing workflow.
 | Vague fixes | "Be careful" doesn't work | Encode specific changes |
 | Skip verification | No way to know if fixed | Define success criteria |
 
-## Contributing
-
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ## License
 
 MIT License - see [LICENSE](LICENSE)
