@@ -1,7 +1,8 @@
 ---
 name: lessons-learned
-description: Conduct structured retrospective analysis for incidents, mistakes, and near-misses. Transforms problems into systematic improvements.
+description: Conduct structured retrospective analysis and encode fixes into the system. Use after incidents, mistakes, rollbacks, post-mortems, or when asking "what went wrong."
 use_when: After incidents, mistakes, rollbacks, or when user says "what went wrong", "lessons learned", "post-mortem", "retrospective", or "how do we prevent this"
+user-invocable: true
 ---
 
 # Lessons Learned
@@ -97,7 +98,7 @@ Classify the fix by type and encode it appropriately:
 
 ### Phase 6: Fix Implementation
 
-**Don't just recommend fixes - implement them.**
+**Don't just recommend fixes -- implement them.**
 
 ```markdown
 ## Fixes Implemented
@@ -215,6 +216,14 @@ Before [ACTION]:
 | Recommendation without action | Lessons forgotten, issue recurs | Implement fixes during retrospective |
 | Vague fixes | "Be more careful" doesn't prevent recurrence | Encode specific, verifiable changes |
 | Skip verification | No way to know if fix worked | Define success criteria and review date |
+
+## Integration (Optional)
+
+After completing a lessons learned session:
+
+1. Log key findings to your daily note or project log
+2. If a skill was created/modified, the skill itself is the durable artifact
+3. Consider adding high-severity incidents to a dedicated incident log
 
 ## Success Criteria
 
