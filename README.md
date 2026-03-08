@@ -50,7 +50,13 @@ This means:
 
 ## Installation
 
-### Option 1: Copy to your Claude Code skills directory
+### Option 1: Skills CLI
+
+```bash
+npx skills add aplaceforallmystuff/claude-lessons-learned
+```
+
+### Option 2: Copy to your Claude Code skills directory
 
 ```bash
 # Clone the repository
@@ -60,13 +66,13 @@ git clone https://github.com/aplaceforallmystuff/claude-lessons-learned.git
 cp -r claude-lessons-learned/skills/lessons-learned ~/.claude/skills/
 ```
 
-### Option 2: Clone directly to skills directory
+### Option 3: Clone directly to skills directory
 
 ```bash
 git clone https://github.com/aplaceforallmystuff/claude-lessons-learned.git ~/.claude/skills/lessons-learned
 ```
 
-### Option 3: Manual installation
+### Option 4: Manual installation
 
 1. Create the directory: `mkdir -p ~/.claude/skills/lessons-learned`
 2. Download [SKILL.md](skills/lessons-learned/SKILL.md) to that directory
@@ -151,6 +157,14 @@ Missing sanitization step in publishing workflow.
 | Just recommend | Lessons forgotten | Implement during retrospective |
 | Vague fixes | "Be careful" doesn't work | Encode specific changes |
 | Skip verification | No way to know if fixed | Define success criteria |
+
+## Related Skills
+
+Part of the [aplaceforallmystuff](https://skills.sh/aplaceforallmystuff) skills collection:
+
+- **[think-first](https://github.com/aplaceforallmystuff/claude-think-first)** — Mental model application before significant decisions
+- **[rfu-audit](https://github.com/aplaceforallmystuff/claude-rfu-audit)** — 11-gate utility validation before investing effort
+- **[creation-guard](https://github.com/aplaceforallmystuff/claude-creation-guard)** — Prevent duplicate artifacts before creating new ones
 
 ## License
 
