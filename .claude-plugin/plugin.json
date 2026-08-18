@@ -1,6 +1,21 @@
 {
   "name": "claude-lessons-learned",
+  "displayName": "Lessons Learned",
   "description": "Structured retrospective analysis that turns incidents into fixes: a 7-phase review with 5-Whys that implements the fix, not just notes it.",
   "version": "1.0.0",
-  "author": { "name": "Jim Christian", "email": "hello@jimchristian.net" }
+  "author": {
+    "name": "Jim Christian",
+    "email": "hello@jimchristian.net",
+    "url": "https://jimchristian.net"
+  },
+  "homepage": "https://github.com/aplaceforallmystuff/claude-lessons-learned#readme",
+  "repository": "https://github.com/aplaceforallmystuff/claude-lessons-learned",
+  "license": "MIT",
+  "keywords": [
+    "retrospective",
+    "incident",
+    "post-mortem",
+    "5-whys",
+    "learning"
+  ]
 }

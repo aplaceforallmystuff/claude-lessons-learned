@@ -1,11 +1,13 @@
-# Claude Lessons Learned
+# Lessons Learned
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-blue)](https://claude.ai)
+*Structured retrospective analysis that turns incidents into systematic improvements.*
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-6C5CE7)
+
+![Lessons Learned](docs/images/claude-lessons-learned-architecture-diagram.png)
 
 A Claude Code skill for structured retrospective analysis that transforms incidents into systematic improvements.
-
-![Architecture](docs/images/architecture-diagram.png)
 
 ## Demo Video
 
@@ -13,7 +15,7 @@ A Claude Code skill for structured retrospective analysis that transforms incide
 
 Watch the skill run a live post-mortem on social media integration issues - tracing root causes, identifying fixes, and implementing them directly.
 
-## The Problem
+## Why
 
 When things go wrong, the typical response is:
 
@@ -23,6 +25,36 @@ When things go wrong, the typical response is:
 - Same mistakes repeated
 
 This skill provides a structured framework for turning problems into durable improvements.
+
+## Install
+
+```bash
+# In Claude Code:
+/plugin marketplace add aplaceforallmystuff/marketplace
+/plugin install claude-lessons-learned@jim-christian
+```
+
+<details>
+<summary>Manual install (without the marketplace)</summary>
+
+```bash
+# Clone the repository
+git clone https://github.com/aplaceforallmystuff/claude-lessons-learned.git
+
+# Copy to your Claude Code skills directory
+cp -r claude-lessons-learned/skills/lessons-learned ~/.claude/skills/
+```
+</details>
+
+## Use cases
+
+Use it when:
+
+- An incident or rollback just happened and you need a real post-mortem, not a shrug
+- You catch yourself asking "what went wrong?" or "how do we prevent this?"
+- A mistake keeps recurring and quick fixes haven't stopped it
+- A near-miss exposed a gap worth encoding before it bites for real
+- You want the fix written into a skill, guard, or doc — not just noted and forgotten
 
 ## How It Works
 
@@ -38,7 +70,7 @@ The skill guides you through a 7-phase retrospective process:
 | 6. Implementation | Encode the fix | Actual changes made |
 | 7. Verification | How to test? | Success criteria |
 
-## Key Principle: Implement, Don't Recommend
+### Key Principle: Implement, Don't Recommend
 
 The skill enforces a critical rule: **don't just recommend fixes - implement them**.
 
@@ -48,36 +80,7 @@ This means:
 - Building automation for forgotten manual steps
 - Encoding checklists for multi-step verification
 
-## Installation
-
-### Option 1: Skills CLI
-
-```bash
-npx skills add aplaceforallmystuff/claude-lessons-learned
-```
-
-### Option 2: Copy to your Claude Code skills directory
-
-```bash
-# Clone the repository
-git clone https://github.com/aplaceforallmystuff/claude-lessons-learned.git
-
-# Copy to your Claude Code skills directory
-cp -r claude-lessons-learned/skills/lessons-learned ~/.claude/skills/
-```
-
-### Option 3: Clone directly to skills directory
-
-```bash
-git clone https://github.com/aplaceforallmystuff/claude-lessons-learned.git ~/.claude/skills/lessons-learned
-```
-
-### Option 4: Manual installation
-
-1. Create the directory: `mkdir -p ~/.claude/skills/lessons-learned`
-2. Download [SKILL.md](skills/lessons-learned/SKILL.md) to that directory
-
-## Usage
+## Example
 
 The skill activates when you say:
 
@@ -88,7 +91,7 @@ The skill activates when you say:
 - "how do we prevent this"
 - "that shouldn't have happened"
 
-### Example Output
+It then walks the 7 phases and produces a retrospective. Illustrative output:
 
 ```markdown
 # Lessons Learned: Premature GitHub Push
@@ -168,7 +171,7 @@ Part of the [aplaceforallmystuff](https://skills.sh/aplaceforallmystuff) skills 
 
 ## License
 
-MIT License - see [LICENSE](LICENSE)
+MIT — see [LICENSE](LICENSE).
 
 ---
 
