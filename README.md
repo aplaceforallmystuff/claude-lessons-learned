@@ -31,7 +31,7 @@ This skill provides a structured framework for turning problems into durable imp
 ```bash
 # In Claude Code:
 /plugin marketplace add aplaceforallmystuff/marketplace
-/plugin install claude-lessons-learned@jim-christian
+/plugin install claude-lessons-learned@aplaceforallmystuff
 ```
 
 <details>
