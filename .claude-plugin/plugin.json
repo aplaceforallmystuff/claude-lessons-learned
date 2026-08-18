@@ -1,0 +1,6 @@
+{
+  "name": "claude-lessons-learned",
+  "description": "Structured retrospective analysis that turns incidents into fixes: a 7-phase review with 5-Whys that implements the fix, not just notes it.",
+  "version": "1.0.0",
+  "author": { "name": "Jim Christian", "email": "hello@jimchristian.net" }
+}
